@@ -36,19 +36,19 @@ const socialPlatforms = [
   {
     Icon: TwitterXIcon,
     label: "Twitter / X",
-    href: "https://twitter.com/ashutosh",
+    href: "https://x.com/AshutoshSh1382",
     description: "DevOps & Tech content",
   },
   {
     Icon: InstagramIcon,
     label: "Instagram",
-    href: "https://instagram.com/ashutosh",
+    href: "https://www.instagram.com/ashu_fyi/",
     description: "Life skills & Marketing",
   },
   {
     Icon: YoutubeIcon,
     label: "YouTube",
-    href: "https://youtube.com/@ashutosh",
+    href: "https://www.youtube.com/@AshutoshShukla-ym7of",
     description: "Educational content",
   },
 ];
@@ -254,7 +254,7 @@ export default function Contact() {
                 </div>
 
                 <p className="text-terminal-muted font-mono text-xs italic pt-4">
-                  // Update social links with your actual profile URLs
+                  // Social links verified and up to date
                 </p>
               </div>
             </TerminalWindow>
