@@ -6,6 +6,38 @@ import { GithubIcon, AwsIcon } from "./ui/Icons";
 import { ExternalLink, FolderGit2 } from "lucide-react";
 
 const projects = [
+   {
+      title: "DevOps Portfolio — AWS S3 + CloudFront Deployment",
+      description:
+        "Deployed a personal portfolio website on AWS cloud infrastructure from scratch as a hands-on DevOps practice project. Configured S3 static hosting, CloudFront CDN, IAM security, and automated CI/CD pipeline.",
+      repo: "https://github.com/Ashut2/Ashu-Portfolio",
+      tags: ["aws", "s3", "cloudfront", "iam", "ci-cd", "github-actions", "nextjs", "linux"],
+      status: "Live",
+      period: "April 2026",
+      highlights: [
+        "S3 static website hosting in Mumbai region",
+        "CloudFront CDN with free HTTPS across 400+ edge locations",
+        "IAM user with least-privilege security permissions",
+        "GitHub Actions CI/CD — auto deploy on every git push",
+      ],
+  },
+
+  {
+    title: "AWS Resource Tracker",
+    description:
+      "Automated AWS resource usage report generation using Bash scripts integrated with cron jobs. Tracks EC2 instances, S3 buckets, Lambda functions, and IAM users.",
+    repo: "https://github.com/Ashut2/AWS-Resource-tracker",
+    tags: ["aws", "bash", "scripting", "automation", "ec2", "s3", "lambda", "iam"],
+    status: "Active",
+    period: "2026 - Present",
+    highlights: [
+      "Automated resource monitoring",
+      "Cron job scheduling",
+      "AWS CLI integration", 
+      "Cost optimization insights",
+    ],
+  },
+
   {
     title: "DevOps Roadmap Documentation",
     description:
@@ -21,21 +53,7 @@ const projects = [
       "CI/CD pipeline concepts",
     ],
   },
-  {
-    title: "AWS Resource Tracker",
-    description:
-      "Automated AWS resource usage report generation using Bash scripts integrated with cron jobs. Tracks EC2 instances, S3 buckets, Lambda functions, and IAM users.",
-    repo: "https://github.com/Ashut2/AWS-Resource-tracker",
-    tags: ["aws", "bash", "scripting", "automation", "ec2", "s3", "lambda", "iam"],
-    status: "Active",
-    period: "2026 - Present",
-    highlights: [
-      "Automated resource monitoring",
-      "Cron job scheduling",
-      "AWS CLI integration",
-      "Cost optimization insights",
-    ],
-  },
+  
 ];
 
 export default function Projects() {
