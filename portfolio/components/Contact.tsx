@@ -2,15 +2,15 @@
 
 import { motion } from "framer-motion";
 import { TerminalWindow } from "./ui/TerminalWindow";
-import { GithubIcon, LinkedinIcon, MailIcon, TwitterXIcon, InstagramIcon, YoutubeIcon } from "./ui/Icons";
+import { GithubIcon, LinkedinIcon, MailIcon, TwitterXIcon, YoutubeIcon } from "./ui/Icons";
 import { MapPin, Briefcase } from "lucide-react";
 
 const contactMethods = [
   {
     Icon: MailIcon,
     label: "Email",
-    value: "ashutosh.shukla@gmail.com",
-    href: "mailto:ashutosh.shukla@gmail.com",
+    value: "ashutosh.sh888@gmail.com",
+    href: "mailto:ashutosh.sh888@gmail.com",
     description: "Preferred for project inquiries",
     color: "#f9bd2b",
   },
@@ -39,15 +39,10 @@ const socialPlatforms = [
     href: "https://x.com/AshutoshSh1382",
     description: "DevOps & Tech content",
   },
-  {
-    Icon: InstagramIcon,
-    label: "Instagram",
-    href: "https://www.instagram.com/ashu_fyi/",
-    description: "Life skills & Marketing",
-  },
+
   {
     Icon: YoutubeIcon,
-    label: "YouTube",
+    label: "YouTube", 
     href: "https://www.youtube.com/@AshutoshShukla-ym7of",
     description: "Educational content",
   },
@@ -141,7 +136,7 @@ export default function Contact() {
             </TerminalWindow>
           </motion.div>
 
-          {/* Contact Form Placeholder & Social Links */}
+          {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -149,76 +144,11 @@ export default function Contact() {
             transition={{ delay: 0.4 }}
             className="space-y-6"
           >
-            {/* Future Contact Form */}
-            {/* TODO: Future Resend integration for contact form */}
-            <TerminalWindow title="send-message.sh">
-              <div className="space-y-4">
-                <p className="text-terminal-accent font-mono text-sm mb-4">
-                  $ send-message
-                </p>
-
-                <div className="space-y-3 opacity-50 pointer-events-none">
-                  <div>
-                    <label className="block text-terminal-muted font-mono text-sm mb-2">
-                      {"> "}Enter name:
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-2 bg-terminal-bg border-2 border-terminal-border rounded font-mono text-sm text-terminal-text"
-                      placeholder="Your name"
-                      disabled
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-terminal-muted font-mono text-sm mb-2">
-                      {"> "}Enter email:
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full px-4 py-2 bg-terminal-bg border-2 border-terminal-border rounded font-mono text-sm text-terminal-text"
-                      placeholder="your.email@example.com"
-                      disabled
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-terminal-muted font-mono text-sm mb-2">
-                      {"> "}Enter message:
-                    </label>
-                    <textarea
-                      rows={4}
-                      className="w-full px-4 py-2 bg-terminal-bg border-2 border-terminal-border rounded font-mono text-sm text-terminal-text resize-none"
-                      placeholder="Your message..."
-                      disabled
-                    />
-                  </div>
-
-                  <button
-                    className="w-full px-6 py-3 bg-terminal-accent/50 text-terminal-bg font-mono font-bold rounded cursor-not-allowed"
-                    disabled
-                  >
-                    [ ./send.sh ]
-                  </button>
-                </div>
-
-                <div className="pt-4 border-t border-terminal-border">
-                  <p className="text-terminal-muted font-mono text-xs italic">
-                    {/* TODO: Contact form with Resend integration coming soon... */}
-                    // Contact form with Resend integration coming soon...
-                  </p>
-                  <p className="text-terminal-accent font-mono text-xs mt-2">
-                    // For now, please use email or LinkedIn above
-                  </p>
-                </div>
-              </div>
-            </TerminalWindow>
-
             {/* Social Platforms */}
             <TerminalWindow title="social-links.sh">
               <div className="space-y-4">
                 <h3 className="text-terminal-accent font-mono font-bold">
-                  Follow me on social media:
+                  Follow me on my socials:
                 </h3>
 
                 <div className="space-y-3">
@@ -278,7 +208,7 @@ export default function Contact() {
               I&apos;m always excited to collaborate and learn. Open to freelance and contractual work!
             </p>
             <a
-              href="mailto:ashutosh.shukla@gmail.com"
+              href="mailto:ashutosh.sh888@gmail.com"
               className="btn-primary inline-block"
               data-testid="contact-cta-btn"
             >

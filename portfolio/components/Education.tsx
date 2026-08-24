@@ -11,7 +11,7 @@ export default function Education() {
     university: "Abdul Kalam Technical University",
     location: "Ghaziabad, India",
     duration: "2023 – 2027",
-    gpa: "7.78",
+    gpa: "7.08",
     status: "In Progress",
   };
 
