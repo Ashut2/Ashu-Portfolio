@@ -7,7 +7,7 @@ import { siNextdotjs, siTailwindcss } from "simple-icons";
 const socialLinks = [
   { Icon: GithubIcon, href: "https://github.com/Ashut2", label: "GitHub" },
   { Icon: LinkedinIcon, href: "https://linkedin.com/in/ashutosh1shukla", label: "LinkedIn" },
-  { Icon: MailIcon, href: "mailto:ashutosh.shukla@gmail.com", label: "Email" },
+  { Icon: MailIcon, href: "mailto:ashutosh.sh888@gmail.com", label: "Email" },
 ];
 
 const techStack = [

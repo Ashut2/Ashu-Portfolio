@@ -23,9 +23,9 @@ const socialLinks = [
   },
   {
     Icon: MailIcon,
-    href: "mailto:ashutosh.shukla@gmail.com",
+    href: "mailto:ashutosh.sh888@gmail.com",
     label: "Email",
-    username: "ashutosh.shukla@gmail.com"
+    username: "ashutosh.sh888@gmail.com"
   },
   {
     Icon: FileText,
