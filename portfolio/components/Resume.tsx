@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, FileText, FolderGit2, Terminal } from "lucide-react";
+import { ExternalLink, FileText, FolderGit2, Terminal } from "lucide-react";
 import { TerminalWindow } from "./ui/TerminalWindow";
 
 const coreSkills = [
@@ -37,7 +37,14 @@ export default function Resume() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <TerminalWindow title="ashutosh-shukla-resume.docx">
+          <a
+            href="/Ashutosh_Shukla_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-terminal-accent"
+            aria-label="Open Ashutosh Shukla's resume PDF in a new tab"
+          >
+          <TerminalWindow title="ashutosh-shukla-resume.pdf">
             <div className="grid gap-8 lg:grid-cols-[1.35fr_0.65fr]">
               <div className="space-y-6">
                 <div className="flex flex-wrap items-start justify-between gap-5">
@@ -50,14 +57,10 @@ export default function Resume() {
                       DevOps &amp; Cloud Engineer — Entry Level
                     </h3>
                   </div>
-                  <a
-                    href="/Ashutosh_Shukla_DevOps_Cloud_Resume.docx"
-                    download
-                    className="btn-primary inline-flex items-center gap-2 whitespace-nowrap"
-                  >
-                    <Download size={18} />
-                    download resume
-                  </a>
+                  <span className="btn-primary inline-flex items-center gap-2 whitespace-nowrap">
+                    <ExternalLink size={18} />
+                    open resume
+                  </span>
                 </div>
 
                 <p className="text-terminal-text leading-relaxed">
@@ -102,6 +105,7 @@ export default function Resume() {
               </div>
             </div>
           </TerminalWindow>
+          </a>
         </motion.div>
       </div>
     </section>

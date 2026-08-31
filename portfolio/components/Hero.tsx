@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, FileText } from "lucide-react";
 import { GithubIcon, LinkedinIcon, MailIcon } from "./ui/Icons";
 import { TerminalWindow } from "./ui/TerminalWindow";
 import { Typewriter } from "./ui/Typewriter";
@@ -21,11 +21,17 @@ const socialLinks = [
     label: "LinkedIn",
     username: "ashutosh1shukla"
   },
-  { 
-    Icon: MailIcon, 
-    href: "mailto:ashutosh.shukla@gmail.com", 
+  {
+    Icon: MailIcon,
+    href: "mailto:ashutosh.shukla@gmail.com",
     label: "Email",
     username: "ashutosh.shukla@gmail.com"
+  },
+  {
+    Icon: FileText,
+    href: "/Ashutosh_Shukla_Resume.pdf",
+    label: "Resume",
+    username: "resume",
   },
 ];
 
@@ -124,8 +130,8 @@ export default function Hero() {
                   <a
                     key={link.label}
                     href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={link.label === "Email" ? undefined : "_blank"}
+                    rel={link.label === "Email" ? undefined : "noopener noreferrer"}
                     className="group flex items-center gap-2 text-terminal-muted hover:text-terminal-accent transition-colors"
                     data-testid={`social-link-${link.label.toLowerCase()}`}
                   >
